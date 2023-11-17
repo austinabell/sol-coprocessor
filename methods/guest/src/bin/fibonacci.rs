@@ -14,11 +14,9 @@
 
 #![no_main]
 
-use ethabi::{self, Token};
-
 use revm::{
     db::{CacheDB, EmptyDB},
-    primitives::{address, ExecutionResult, Output, TransactTo, U256},
+    primitives::{address, ExecutionResult, TransactTo, U256},
     EVM,
 };
 use revm_primitives::{AccountInfo, Bytecode};
